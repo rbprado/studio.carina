@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
 /*
 	Visualize by TEMPLATED
@@ -1493,13 +1493,13 @@
 		}
 
 	h1 {
-		font-size: 1.75em;
+		font-size: 2.75em;
 	}
 
 		@media screen and (max-width: 980px) {
 
 			h1 {
-				font-size: 1.5em;
+				font-size: 2.5em;
 			}
 
 		}
@@ -1507,7 +1507,7 @@
 		@media screen and (max-width: 736px) {
 
 			h1 {
-				font-size: 1.25em;
+				font-size: 2.25em;
 			}
 
 		}
