@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
+@import url(flag-icon.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
 /*
@@ -7,6 +8,41 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+
+/* Language selector */
+
+#en {
+	display: none;
+}
+
+#nl {
+	display: none;
+}
+
+.button_lang {
+	background-color: #444;
+	color: #FFF;
+	padding: 8px 20px;
+	border-radius: 5px;
+
+	-webkit-transition: background-color .3s ease-in-out;
+	-moz-transition: background-color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out;
+	-ms-transition: background-color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+}
+.button_lang:hover, .current_lang {
+	background-color: #777;
+	-webkit-transition: background-color .3s ease-in-out;
+	-moz-transition: background-color .3s ease-in-out;
+	-o-transition: background-color .3s ease-in-out;
+	-ms-transition: background-color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+}
+ul li {
+	width: auto;
+	display: inline;
+}
 
 /* Reset */
 
