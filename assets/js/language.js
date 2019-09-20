@@ -9,33 +9,34 @@ var portuguese = document.getElementById('pt_click'),
     nb_en = en_txt.length;
 
 portuguese.addEventListener('click', function() {
-    langue(portuguese,dutch,english);
+    langue(portuguese, dutch, english);
 }, false);
 
 dutch.addEventListener('click', function() {
-    langue(dutch,english,portuguese);
+    langue(dutch, english, portuguese);
 }, false);
 
 english.addEventListener('click', function() {
-    langue(english,portuguese,dutch);
+    langue(english, portuguese, dutch);
 }, false);
 
-function langue(langueOn,langueOff){
+function langue(langueOn, langueOff1, langueOff2){
+    langueOff1.classList.remove('current_lang');
+    langueOff2.classList.remove('current_lang');
     if (!langueOn.classList.contains('current_lang')) {
         langueOn.classList.toggle('current_lang');
-        langueOff.classList.toggle('current_lang');
     }
-    if(langueOn.innerHTML == 'Pt'){
+    if(langueOn.classList.contains('flag-icon-br')){
         afficher(pt_txt, nb_pt);
         cacher(nl_txt, nb_nl);
         cacher(en_txt, nb_en);
     }
-    else if(langueOn.innerHTML == 'Nl'){
+    else if(langueOn.classList.contains('flag-icon-nl')){
         afficher(nl_txt, nb_nl);
         cacher(pt_txt, nb_pt);
         cacher(en_txt, nb_en);
     }
-    else if(langueOn.innerHTML == 'En'){
+    else if(langueOn.classList.contains('flag-icon-gb')){
         afficher(en_txt, nb_en);
         cacher(pt_txt, nb_pt);
         cacher(nl_txt, nb_nl);

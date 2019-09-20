@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
-@import url(flag-icon.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200");
 
 /*
@@ -11,38 +10,43 @@
 
 /* Language selector */
 
-#en {
-	display: none;
-}
+	#en {
+		display: none;
+	}
 
-#nl {
-	display: none;
-}
+	#nl {
+		display: none;
+	}
 
-.button_lang {
-	background-color: #444;
-	color: #FFF;
-	padding: 8px 20px;
-	border-radius: 5px;
+	.button_lang {
+		padding: 8px 25px;
+		background-color: none;
+		color: none;
+		box-shadow: none;
+		border-radius: 5px;
 
-	-webkit-transition: background-color .3s ease-in-out;
-	-moz-transition: background-color .3s ease-in-out;
-	-o-transition: background-color .3s ease-in-out;
-	-ms-transition: background-color .3s ease-in-out;
-	transition: background-color .3s ease-in-out;
-}
-.button_lang:hover, .current_lang {
-	background-color: #777;
-	-webkit-transition: background-color .3s ease-in-out;
-	-moz-transition: background-color .3s ease-in-out;
-	-o-transition: background-color .3s ease-in-out;
-	-ms-transition: background-color .3s ease-in-out;
-	transition: background-color .3s ease-in-out;
-}
-ul li {
-	width: auto;
-	display: inline;
-}
+		-webkit-transition: box-shadow .3s ease-in-out;
+		-moz-transition: box-shadow .3s ease-in-out;
+		-o-transition: box-shadow .3s ease-in-out;
+		-ms-transition: box-shadow .3s ease-in-out;
+		transition: box-shadow .3s ease-in-out;
+	}
+
+	.button_lang:hover, .current_lang {
+		padding: 8px 25px;
+		border-radius: 4px;
+		box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.25), 0 0 1.5em 0 #FF6382;
+		-webkit-transition: box-shadow .3s ease-in-out;
+		-moz-transition: box-shadow .3s ease-in-out;
+		-o-transition: box-shadow .3s ease-in-out;
+		-ms-transition: box-shadow .3s ease-in-out;
+		transition: box-shadow .3s ease-in-out;
+	}
+
+	ul li {
+		width: auto;
+		display: inline;
+	}
 
 /* Reset */
 
