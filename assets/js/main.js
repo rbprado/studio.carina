@@ -5,7 +5,6 @@
 */
 
 $(function() {
-
 	// Vars.
 		var	$window = $(window),
 			$body = $('body'),
