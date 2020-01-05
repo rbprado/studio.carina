@@ -31,16 +31,17 @@ function langue(langueOn, langueOff1, langueOff2){
         cacher(pt_txt, nb_pt);
         cacher(en_txt, nb_en);
     }
-    else if(langueOn.classList.contains('flag-icon-br')){
-        afficher(pt_txt, nb_pt);
-        cacher(nl_txt, nb_nl);
-        cacher(en_txt, nb_en);
-    }
     else if(langueOn.classList.contains('flag-icon-gb')){
         afficher(en_txt, nb_en);
         cacher(pt_txt, nb_pt);
         cacher(nl_txt, nb_nl);
     }
+    else if(langueOn.classList.contains('flag-icon-br')){
+        afficher(pt_txt, nb_pt);
+        cacher(nl_txt, nb_nl);
+        cacher(en_txt, nb_en);
+    }
+
 }
 
 function afficher(txt,nb){
